@@ -5,47 +5,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.prags.myapplication.MainActivityFragment"
+    tools:layout_editor_absoluteY="137dp"
     tools:showIn="@layout/activity_main">
 
     <Button
         android:id="@+id/ScanButton"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-
-
+        android:layout_width="208dp"
+        android:layout_height="205dp"
+        android:layout_marginTop="42dp"
         android:background="@drawable/roundbuttonshape"
         android:text="@string/ScanButtonText"
-
-
         android:textColor="#FFFFFF"
-
-        android:textSize="21sp"
+        android:textSize="31sp"
+        android:textStyle="bold"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.216" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/LoginBtn"
         android:layout_width="300dp"
-        android:layout_height="50dp"
-
-
-        android:layout_marginTop="76dp"
-
-
+        android:layout_height="47dp"
+        android:layout_marginTop="172dp"
         android:background="@drawable/orangebutton"
+
         android:gravity="center"
+
         android:text="@string/LoginButtonText"
         android:textColor="#FFFFFF"
-
-        android:textSize="21sp"
-
+        android:textSize="14sp"
+        android:textStyle="normal"
         android:visibility="visible"
-        app:layout_constraintTop_toBottomOf="@+id/ScanButton"
-        tools:layout_editor_absoluteX="42dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ScanButton" />
 
     <Button
         android:id="@+id/ActivateBtn"
@@ -53,18 +48,20 @@
         android:layout_height="50dp"
 
 
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="20dp"
+
         android:background="@drawable/orangebutton"
+
         android:text="@string/ActivateButtonText"
-
         android:textColor="#FFFFFF"
-
-        android:textSize="21sp"
+        android:textSize="15sp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.886" />
+        app:layout_constraintTop_toBottomOf="@+id/LoginBtn" />
 
 
 </android.support.constraint.ConstraintLayout>
